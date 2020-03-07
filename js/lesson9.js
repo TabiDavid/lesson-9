@@ -10,7 +10,9 @@ fetch(requestURL)
 
     for (let i = 0; i < towns.length; i++) {
       if (towns[i].name == "Fish Haven" || towns[i].name == "Preston" || towns[i].name == "Soda Springs") {
-        // Create HTML elements as variables
+
+        // Create HTML elements as variables//
+
         let card = document.createElement('section');
         let carddiv = document.createElement('div');
         let h2 = document.createElement('h2');
@@ -19,7 +21,9 @@ fetch(requestURL)
         let population = document.createElement('p');
         let rainfall = document.createElement('p');
         let image = document.createElement('img');
+
         //CLASS
+
         card.setAttribute('class', 'townsection');
         h2.setAttribute('class', 'townname');
         h3.setAttribute('class', 'towntittle');
@@ -27,16 +31,24 @@ fetch(requestURL)
         population.setAttribute('class', 'townp');
         rainfall.setAttribute('class', 'townp');
         image.setAttribute('class', 'townimage');
-        //Assign variables content from JSON
+
+
+        //Assign variables content from JSON//
+
         h2.textContent = towns[i].name;
         h3.textContent = towns[i].motto;
         year.textContent = "Year Founded: " + towns[i].yearFounded;
         population.textContent = "Population: " + towns[i].currentPopulation;
         rainfall.textContent = "Annual Rain Fall: " + towns[i].averageRainfall;
-        //IMAGES
+
+
+        //IMAGES//
+
         image.setAttribute('src', "img/" + towns[i].photo);
         image.setAttribute('alt', "picture of: " + h2.textContent);
-        //Append HTML items
+
+        //Append HTML items//
+
         carddiv.appendChild(h2);
         carddiv.appendChild(h3);
         carddiv.appendChild(year);
@@ -44,8 +56,10 @@ fetch(requestURL)
         carddiv.appendChild(rainfall);
         card.appendChild(carddiv);
         card.appendChild(image);
-        //Commit to DOM
-        document.querySelector('div.cards').appendChild(card);
+
+        //Commit to DOM//
+        
+        document.querySelector('div.towns').appendChild(card);
       }
     }
   });
