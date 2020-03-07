@@ -22,11 +22,11 @@ fetch(requestURL)
         //CLASS
         card.setAttribute('class', 'townsection');
         h2.setAttribute('class', 'townname');
-        h3.setAttribute('class', 'townmotto');
-        year.setAttribute('class', 'towninfo');
-        population.setAttribute('class', 'towninfo');
-        rainfall.setAttribute('class', 'towninfo');
-        image.setAttribute('class', 'townphoto');
+        h3.setAttribute('class', 'towntittle');
+        year.setAttribute('class', 'townp');
+        population.setAttribute('class', 'townp');
+        rainfall.setAttribute('class', 'townp');
+        image.setAttribute('class', 'townimage');
         //Assign variables content from JSON
         h2.textContent = towns[i].name;
         h3.textContent = towns[i].motto;

@@ -96,37 +96,26 @@ nav {
 
 .responsive li {
     display: block;
-}   
-/*
-gallery image code
-*/
-main {
-    max-width: 900px;
-    background-color: rgb(231, 210, 210);
-    padding: 15px;
-    margin: auto;
-    text-align: left;
+}  
+
+.townsection {
+    border: 1px solid black;
+    margin: 2px auto;
 }
-legend {
-    padding: 5px;
-    margin: 10px;
+
+h3 {
     text-align: center;
-    font-size: large;
 }
 
-input {
-    padding: 5px;
-    margin: 4px;
-}
-.button {
-text-align: center;
-
-}
-
-.thank {
+.townp {
     text-align: center;
-    font-family: 'Roboto';
-    font-size: large;
+}
+
+.townimage {
+    display: block;
+    width: 85%;
+    margin: 10px auto;
+    box-shadow: 0 0 10px #c7bee2;
 }
 
 footer {
