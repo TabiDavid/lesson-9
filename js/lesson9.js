@@ -58,8 +58,8 @@ fetch(requestURL)
         card.appendChild(image);
 
         //Commit to DOM//
-        
-        document.querySelector('div.towns').appendChild(card);
+
+        document.querySelector('div.cards').appendChild(card);
       }
     }
   });
